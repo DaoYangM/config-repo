@@ -5,21 +5,3 @@ eureka:
 spring:
   application:
     name: order
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: yedeyang
-    url: jdbc:mysql://101.132.181.196/sell?characterEncoding=utf-8&useSSL=false
-  jpa:
-    show-sql: true
-
-hystrix:
-  command:
-    default:
-      timeout:
-        enabled: false
-        isolation:
-          thread:
-            timeoutInMilliseconds: 100000000
-server:
-  port: 8081
